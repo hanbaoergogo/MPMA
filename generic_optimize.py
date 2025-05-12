@@ -53,7 +53,7 @@ advprompt = PROMPT[args.advertise]
 advdescription = DESCRIPTION_BAD[args.tool]
 def querygpt(prompt, query,model='gpt-4o'):
     attempts = 0
-    Baseurl = "https://api.claude-Plus.top"
+    Baseurl = ""
     Skey = "xxxxxxx" # your API key
     payload = json.dumps({
         "model": f"{model}", 

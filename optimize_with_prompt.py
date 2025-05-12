@@ -41,7 +41,7 @@ advprompt = PROMPT[args.advertise]
 advdescription = DESCRIPTION[args.tool]
 def querygpt(query,sys_prompt,model='gpt-4o'):
     attempts = 0
-    Baseurl = "https://api.claude-Plus.top"
+    Baseurl = ""
     Skey = "your API"
     payload = json.dumps({
         "model": f"{model}", # gpt-4o, claude-3-7-sonnet-20250219, deepseek-v3,gemini-2.5-pro-exp-03-25

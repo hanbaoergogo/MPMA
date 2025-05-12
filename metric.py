@@ -1,18 +1,7 @@
 # from openai import AzureOpenAI
-import pandas as pd 
 import json
-import os 
-from typing import List
-import time
-import random 
-from tqdm import tqdm
-from transformers import AutoModelForCausalLM, AutoTokenizer
 import pandas as pd
-from datasets import load_dataset
-import argparse
 import requests
-import torch
-from datasets import Dataset
 import string
 from openai import OpenAI
 
@@ -39,7 +28,7 @@ judgemodellist = [
                   ]
 def querygpt(sys_prompt,query,model='gpt-4o'):
     attempts = 0
-    Baseurl = "https://api.claude-Plus.top"
+    Baseurl = ""
     Skey = "xxxxxxxxxxxxxx" # your API key
     payload = json.dumps({
         "model": f"{model}", # gpt-4o, claude-3-7-sonnet-20250219, deepseek-v3,gemini-2.5-pro-exp-03-25
@@ -177,7 +166,6 @@ bestbool_all = generticbool_all = badbool_all =0
 i = 0
 for advertise in advertiselist:
     for tool in toollist:
-     #best 和advertise 无关
         # results[advertise][0] = 0
         print(f"tool, advertise: {tool},{advertise}")
         sysprompt = f"""Assumption: You are an MCP (Model Context Protocol) user. Below, I will provide a descriptions of the MCP server product.
