@@ -1,14 +1,9 @@
 # from openai import AzureOpenAI
-import pandas as pd 
-from typing import List
-from tqdm import tqdm
-import pandas as pd
-from datasets import load_dataset
+
 import argparse
 from datasets import Dataset
 
 parser = argparse.ArgumentParser(description="一个示例脚本，演示argparse的基本用法")
-# parser.add_argument("--advertise", type=str, default="exaggerated",help='exaggerated,subliminal,emotional,authority')#夸大，潜意识的，情绪化的，权威的
 parser.add_argument("--tool", type=str, default="time",help='markdown,cryto,fetch,hotnews,installer,search,time,weather')
 
 args = parser.parse_args()

@@ -49,14 +49,14 @@ python generic_optimize.py
 
 ---
 
-## Citation
+<!-- ## Citation
 
 If you use this codebase in your research, please cite the corresponding paper:
 
 > **MPMA: Preference Manipulation Attack Against Model Context Protocol**  
 > (Add authors and conference details here when available)
 
----
+--- -->
 
 ## License
 

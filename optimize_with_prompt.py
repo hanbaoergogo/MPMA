@@ -15,7 +15,7 @@ import torch
 from datasets import Dataset
 
 parser = argparse.ArgumentParser(description="一个示例脚本，演示argparse的基本用法")
-parser.add_argument("--advertise", type=str, default="exaggerated",help='exaggerated,subliminal,emotional,authority,promise')#夸大，潜意识的，情绪化的，权威的
+parser.add_argument("--advertise", type=str, default="exaggerated",help='exaggerated,subliminal,emotional,authority,promise')
 parser.add_argument("--tool", type=str, default="time",help='markdown,cryto,fetch,hotnews,installer,search,time,weather')
 
 args = parser.parse_args()
@@ -72,7 +72,6 @@ def querygpt(query,sys_prompt,model='gpt-4o'):
             print("Sucesssfully Query")
             break
         except Exception as e:
-            print(f"第 {attempts} 次尝试失败，错误信息: {e}")
             attempts += 1
             response = requests.request("POST", url, headers=headers, data=payload)      
     return res

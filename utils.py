@@ -3,7 +3,6 @@ import requests
 import os
 
 def openai_query(query,instruction):
-    #格式{'id': 'chatcmpl-AUUsvzE4u7ZlkxqC29009j8IO3myM', 'object': 'chat.completion', 'created': 1731831925, 'model': 'gpt-4o-mini-2024-07-18', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'E', 'refusal': None}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 54, 'completion_tokens': 1, 'total_tokens': 55, 'prompt_tokens_details': {'cached_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 0}}, 'system_fingerprint': 'fp_04751d0b65'}
     Baseurl = ""
     Skey = "xxxxxxxxx" # your API key
     payload = json.dumps({

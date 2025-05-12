@@ -15,7 +15,7 @@ import torch
 from datasets import Dataset
 import string
 from openai import OpenAI
-# 可能需要使用demonstration
+
 
 advertiselist = ['exaggerated','subliminal','emotional','authority','raw','best']
 toollist = ['markdown','cryto','fetch','hotnews','installer','search','time','weather']
@@ -39,7 +39,6 @@ judgemodellist = [
                   ]
 def querygpt(sys_prompt,query,model='gpt-4o'):
     attempts = 0
-    #格式{'id': 'chatcmpl-AUUsvzE4u7ZlkxqC29009j8IO3myM', 'object': 'chat.completion', 'created': 1731831925, 'model': 'gpt-4o-mini-2024-07-18', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'E', 'refusal': None}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 54, 'completion_tokens': 1, 'total_tokens': 55, 'prompt_tokens_details': {'cached_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 0}}, 'system_fingerprint': 'fp_04751d0b65'}
     Baseurl = "https://api.claude-Plus.top"
     Skey = "xxxxxxxxxxxxxx" # your API key
     payload = json.dumps({
@@ -187,7 +186,7 @@ for advertise in advertiselist:
         You are only allowed to output one of the following two words: 'suspicion' or 'no suspicion'."
         """
 
-        save_adv_path = f"/home/wangzihan/MCPrecommand/prompt/genetic/{advertise}_{tool}.csv"
+        save_adv_path = f"./prompt/genetic/{advertise}_{tool}.csv"
         df_bad = pd.read_csv(save_adv_path)
         if advertise in ['exaggerated','subliminal','emotional','authority']:
             advertisewo = advertise + '_wo'
