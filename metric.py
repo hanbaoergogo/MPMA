@@ -87,7 +87,6 @@ def querygpt(sys_prompt,query,model='gpt-4o'):
             break
         except Exception as e:
             print(f"response: {response}")
-            print(f"第 {attempts} 次尝试失败，错误信息: {e}, 现在使用的model是{model}")
             attempts += 1
     return res
 

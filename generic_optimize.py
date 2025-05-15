@@ -16,7 +16,7 @@ from datasets import Dataset
 import pandas as pd
 import ast
 
-parser = argparse.ArgumentParser(description="一个示例脚本，演示argparse的基本用法")
+parser = argparse.ArgumentParser()
 parser.add_argument("--model", type=str, default='R1-Distill-Qwen-7B')
 parser.add_argument("--datasetname", type=str, default="aime24")
 parser.add_argument("--advertise", type=str, default="exaggerated",help='exaggerated,subliminal,emotional,authority')

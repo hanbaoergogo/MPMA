@@ -14,7 +14,7 @@ import requests
 import torch
 from datasets import Dataset
 
-parser = argparse.ArgumentParser(description="一个示例脚本，演示argparse的基本用法")
+parser = argparse.ArgumentParser()
 parser.add_argument("--advertise", type=str, default="exaggerated",help='exaggerated,subliminal,emotional,authority,promise')
 parser.add_argument("--tool", type=str, default="time",help='markdown,cryto,fetch,hotnews,installer,search,time,weather')
 

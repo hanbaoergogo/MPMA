@@ -28,9 +28,6 @@ def openai_query(query,instruction):
 
     response = requests.request("POST", url, headers=headers, data=payload)
 
-    # 解析 JSON 数据为 Python 字典
     data = response.json()
-
-    # 获取 content 字段的值
     option = data['choices'][0]['message']['content']
     return option
