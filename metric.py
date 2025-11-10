@@ -1,4 +1,3 @@
-# from openai import AzureOpenAI
 import json
 import pandas as pd
 import requests

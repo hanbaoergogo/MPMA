@@ -1,4 +1,3 @@
-# from openai import AzureOpenAI
 
 import argparse
 from datasets import Dataset

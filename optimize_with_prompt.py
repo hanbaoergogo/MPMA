@@ -1,4 +1,3 @@
-# from openai import AzureOpenAI
 import pandas as pd 
 import json
 import os 
@@ -77,7 +76,6 @@ def querygpt(query,sys_prompt,model='gpt-4o'):
     return res
 
 bestdescription = querygpt(advdescription,advprompt)
-print(f'bestprompt:{bestdescription}')
 save_path = f"./prompt/optimize_with_prompt/{args.advertise}_{args.tool}.csv"
 
 data_dict = {

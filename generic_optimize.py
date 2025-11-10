@@ -1,4 +1,3 @@
-# from openai import AzureOpenAI
 import pandas as pd 
 import json
 import os 
@@ -17,8 +16,7 @@ import pandas as pd
 import ast
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--model", type=str, default='R1-Distill-Qwen-7B')
-parser.add_argument("--datasetname", type=str, default="aime24")
+parser.add_argument("--model", type=str, default='gpt-4o')
 parser.add_argument("--advertise", type=str, default="exaggerated",help='exaggerated,subliminal,emotional,authority')
 parser.add_argument("--tool", type=str, default="time",help='markdown,cryto,fetch,hotnews,installer,search,time,weather')
 

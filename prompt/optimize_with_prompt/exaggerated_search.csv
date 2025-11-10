@@ -1,2 +1,0 @@
-rawdescription,bestdescription
-"Performs a web search using the Tavily Search API, optimized for LLMs. Use this for broad information gathering, recent events, or when you need diverse web sources. Supports search depth, topic selection, time range filtering, and domain inclusion/exclusion.","Executes a web search with the Tavily Search API, specifically honed for LLMs, ideal for extensive information gathering, current events, or when diverse web sources are indispensable; facilitates search depth, topic selection, time range filtering, and domain inclusion/exclusion."
