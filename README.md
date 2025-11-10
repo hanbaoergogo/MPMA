@@ -81,12 +81,14 @@ python generic_optimize.py
 
 If you use this codebase in your research, please cite the corresponding paper:
 
+```
 @article{wang2025mpma,
   title={MPMA: Preference Manipulation Attack Against Model Context Protocol},
   author={Wang, Zihan and Li, Hongwei and Zhang, Rui and Liu, Yu and Jiang, Wenbo and Fan, Wenshu and Zhao, Qingchuan and Xu, Guowen},
   journal={arXiv preprint arXiv:2505.11154},
   year={2025}
 }
+```
 
 ## License
 
